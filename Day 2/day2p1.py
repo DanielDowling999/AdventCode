@@ -1,4 +1,4 @@
-with open('input.txt', 'r') as file:
+with open('day 2/input.txt', 'r') as file:
     safeReports = 0
     levels = []
     ascension = 0 # 1 for increasing, -1 for decreasing
