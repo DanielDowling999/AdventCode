@@ -1,4 +1,4 @@
-with open('day 6/input.txt','r') as zone:
+with open('day 6/inputTest.txt','r') as zone:
     patrolMap = []
     for line in zone:
         patrolMap.append(line.strip())
@@ -8,6 +8,7 @@ with open('day 6/input.txt','r') as zone:
         for j in range(len(patrolMap[0])):
             if patrolMap[i][j] == '^':
                 currPos = [i, j]
+                print
                 break
     #currPos is y,x
     #direction is -j for up, j for down, -1 for left and 1 for right
@@ -46,5 +47,14 @@ with open('day 6/input.txt','r') as zone:
 
                 
     print(len(uniquePos)+1)
+
+#create guard's path.
+#check if placing a # on each part of the path creates a loop
+#if it does, count it.
+#if it doesn't, move onto next
+
+#how to check:
+#Option 1: record direction with the co-ordinates. If we've already travelled in this direction
+#through this co-ordinate, then we know we have looped.
 
 
