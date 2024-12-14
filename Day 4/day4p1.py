@@ -1,18 +1,9 @@
-#First thought, a search starting from every 'x', checking each element in every direction. If the
-#next is an m, continue in that direction until we reach s or it breaks. Could check if 
-
-#possibly faster solution (and easier to handle) is to get every possible 'word' from x, and 
-#then process them all at once. 
-
-
 with open('day 4/input.txt', 'r') as wordSearch:
     xmasCount = 0
     xmasArray = []
     wordArray = []
     for line in wordSearch:
         wordArray.append(line.strip())
-    #print(wordArray)
-
     rowLen = len(wordArray)
     colLen = len(wordArray[0])
 

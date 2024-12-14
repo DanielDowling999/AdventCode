@@ -29,7 +29,7 @@ with open('day 5/input.txt', 'r') as update:
                 if compareFn(update[i],update[j],rules) == 1:
                     continue
                 else:
-                    #print("line: ", update, " broken")
+                    print("line: ", update, " broken")
                     correct = False
                     break
             if correct == False:
