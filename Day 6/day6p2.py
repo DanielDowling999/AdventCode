@@ -1,4 +1,5 @@
-
+import time
+t1 = time.time()
 
 def createMap(filename):
     with open(filename,'r') as zone:
@@ -76,6 +77,8 @@ for pos in guardRoute:
         loops+=checkRoute(patrolMap, [startY, startX], True)
     patrolMap[pos[0]][pos[1]] = '.'
 print(loops)
+t2 = time.time()
+print(t2 - t1)
 
 #create guard's path.
 #check if placing a # on each part of the path creates a loop
