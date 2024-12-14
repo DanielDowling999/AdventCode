@@ -1,33 +1,3 @@
-"""with open('day 5/input.txt', 'r') as update:
-    ruleDict = {}
-    line = update.readline()
-    middle = 0
-    while line != '\n':
-        r1,r2 = line.strip().split('|')
-        #print(r1, r2)
-        if r1 in ruleDict:
-            ruleDict[r1].append(r2)
-        else:
-            ruleDict[r1] = [r2]
-        line = next(update)
-        #print(line)
-    print("Rules: ",  ruleDict['22'])
-    line = next(update)
-    while line !='\n':
-        curr = line.strip().split(',')
-        seenSelf = False
-        print(curr)
-        try:
-            for rule in curr:
-                if rule in ruleDict[curr]:
-                    if seenSelf == True:
-                        
-                    else:
-                        break;
-            line = next(update) 
-        except:
-            break
-    print(middle)"""
 def compareFn(a,b, rules):
     #print(a,b)
     if [a,b] in rules:
